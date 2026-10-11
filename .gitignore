@@ -1,0 +1,20 @@
+# 编译产物  
+*.o  
+*.out  
+*.exe  
+  
+# CFD输出文件  
+*.vtk  
+*.dat  
+*.txt  
+*.csv  
+  
+# 日志文件  
+log*  
+*.log  
+  
+# IDE临时文件  
+.vscode/  
+*.swp  
+*.swo  
+*~ 
