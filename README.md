@@ -1,52 +1,22 @@
-\# cavity-fvm-demo
+# Cavity FVM Demo
+2D lid-driven cavity solver based on Finite Volume Method (FVM), written in pure C.
 
-A minimal single-file C implementation of \*\*Lid-Driven Cavity\*\* using Finite Volume Method(FVM).
+## Overview
+This is a simple incompressible Navier-Stokes solver for lid-driven cavity flow.
+- Spatial discretization: Finite Volume Method
+- Pressure-velocity coupling: SIMPLE algorithm
+- Collocated grid with Rhie-Chow interpolation
+- Support steady-state simulation
 
-Single source file, no external library dependency, compile \& run directly with GCC.
+## Features
+✅ 2D lid-driven cavity classic benchmark
+✅ Pure C implementation, no external CFD library dependency
+✅ Simple iterative solver
+✅ Output velocity and pressure field for post-processing
+✅ Run script for Windows (run.bat) / Linux (run.sh)
 
-
-
-\## ✨ Features
-
-\- Lid-driven cavity flow (classic CFD benchmark)
-
-\- Pure C, only depends on standard library + math library
-
-\- Single `cavity\_fvm.c`, easy to read and modify
-
-\- Output flow field data for post-processing (VTK/dat)
-
-
-
-\## 📋 Environment
-
-\- GCC (>=7.5)
-
-\- Linux / WSL / MinGW(Windows)
-
-
-
-\## 🚀 Quick Start
-
+## Compile & Run
+### Windows
 ```bash
-
-\# clone repository
-
-git clone https://github.com/你的用户名/cavity-fvm-demo.git
-
-cd cavity-fvm-demo
-
-
-
-\# compile
-
-gcc cavity\_fvm.c -o cavity\_fvm -lm
-
-
-
-\# run
-
-./cavity\_fvm
-
-
-
+gcc cavity_fvm.c -o cavity_fvm.exe
+cavity_fvm.exe
